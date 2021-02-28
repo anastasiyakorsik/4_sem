@@ -7,6 +7,7 @@
 
 void Prepare(std::string& data)
 {
+    // можно чуть проще написать std::transform(data.begin(), data.end(), data.begin(), std::tolower);
     std::transform(data.begin(), data.end(), data.begin(),
                    [](unsigned char c){ return std::tolower(c); }); //converting to lower case
 
