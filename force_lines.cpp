@@ -123,6 +123,7 @@ int main()
 		}
 
 		window.display();
+		window.clear();
 	}
 	return 0;
 }
